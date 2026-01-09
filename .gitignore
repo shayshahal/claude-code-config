@@ -1,0 +1,44 @@
+# Sensitive files - NEVER COMMIT
+.credentials.json
+.mcp.json
+settings.local.json
+*.local.json
+
+# Session and history data
+history.jsonl
+file-history/
+session-env/
+shell-snapshots/
+todos/
+plans/
+debug/
+.claude/
+
+# Caches and build artifacts
+tsc-cache/
+node_modules/
+*.tar.gz
+*.tgz
+
+# IDE and project-specific
+ide/
+projects/
+statsig/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Cache files
+cache/
+stats-cache.json
+
+# Environment files
+.env
+.env.*
+!.env.example
+plugins/

@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit:*",
+      "Write:*",
+      "MultiEdit:*",
+      "NotebookEdit:*",
+      "Bash:*",
+      "Bash(~/.claude/hooks/windows-notify.sh)",
+      "Bash(/home/shay/.claude/hooks/windows-notify.sh)",
+      "mcp__playwright__*"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "enabledMcpjsonServers": [
+    "puppeteer"
+  ],
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/shay/.claude/hooks/windows-notify.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/shay/coding/.claude/hooks/verify-all.sh",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "developer-essentials@claude-code-workflows": true
+  },
+  "alwaysThinkingEnabled": true,
+  "diffTool": "zed --wait"
+}
