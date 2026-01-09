@@ -43,5 +43,9 @@
     "developer-essentials@claude-code-workflows": true
   },
   "alwaysThinkingEnabled": true,
-  "diffTool": "zed --wait"
+  "diffTool": "zed --wait",
+  "fileSuggestion": {
+    "type": "command",
+    "command": "~/.claude/file-suggestion.sh"
+  }
 }
