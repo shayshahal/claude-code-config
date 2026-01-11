@@ -2,6 +2,27 @@
 
 Fullstack developer + physics student. I use Claude Code for both software engineering and physics work.
 
+## Workspace Structure
+
+This is the **global parent** `.claude/` directory. Child directories inherit and can override.
+
+```
+~/.claude/                    ← Global config (YOU ARE HERE)
+│
+├── obsidian/                 ← Obsidian vault
+│   └── .claude/              ← Notes-tier config
+│   Content: transcriptions, summaries, exercises → Obsidian notes
+│
+└── coding/
+    ├── .claude/              ← Coding-tier config (verify-all.sh hook)
+    ├── jewelryX/
+    │   └── .claude/          ← Project-specific config
+    └── mapi/
+        └── .claude/          ← Project-specific config
+```
+
+**Inheritance:** global → tier (obsidian/coding) → project
+
 ## Core Expectation: Think, Don't Just Obey
 
 I don't want a yes-machine. I want a collaborator who:

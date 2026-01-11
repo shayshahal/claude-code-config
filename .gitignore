@@ -36,6 +36,8 @@ logs/
 # Cache files
 cache/
 stats-cache.json
+paste-cache/
+telemetry/
 
 # Environment files
 .env
